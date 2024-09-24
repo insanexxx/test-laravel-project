@@ -1,0 +1,114 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "My API",
+        "version": "1.0"
+    },
+    "paths": {
+        "/api/articles": {
+            "get": {
+                "summary": "Get list of articles",
+                "operationId": "93ded9e31119e6bbb22455c72ef97f19",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "/api/articles/{id}": {
+            "get": {
+                "summary": "Get article by ID or slug",
+                "operationId": "1d888c868bba5ef925d54d788ce36141",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "404": {
+                        "description": "Article not found"
+                    }
+                }
+            }
+        },
+        "/api/authors": {
+            "get": {
+                "summary": "Get list of authors",
+                "operationId": "b1de4facd6962392c6fde61f8a7b097a",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "/api/authors/{id}": {
+            "get": {
+                "summary": "Get author by ID or slug",
+                "operationId": "4add5ff21ec108ef4fb1ae1a878dce64",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "404": {
+                        "description": "Author not found"
+                    }
+                }
+            }
+        },
+        "/api/categories": {
+            "get": {
+                "summary": "Get list of categories",
+                "operationId": "ac9c4d978ea4e5b72915ca9728e5b8b1",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "/api/categories/{id}": {
+            "get": {
+                "summary": "Get category by ID or slug",
+                "operationId": "09767bb2e47dde77dd1e2591428b0ae1",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "404": {
+                        "description": "Category not found"
+                    }
+                }
+            }
+        }
+    }
+}
